@@ -1,0 +1,14 @@
+@media (min-width) {
+    
+
+body{
+    color: aquamarine;
+    background-color: black;
+}
+h1{
+    font-size: 45px;
+}
+p{
+    font-size: 25px;
+}
+}
