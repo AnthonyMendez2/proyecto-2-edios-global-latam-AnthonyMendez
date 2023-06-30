@@ -1,147 +1,156 @@
-/* En este archivo escriban su CSS */
 
-/* Fonts */
-/* Importar aquí la font */
+*{box-sizing: border-box;
+margin: 0;}
 
-
-
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*  cuyos valores asigna por defecto el navegador.
-*/
-
-/* Reset */
 body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
+    font-family: sans-serif, Verdana, Tahoma;
+    margin-top: 300px;
     scroll-behavior: smooth;
-    background-color: #fbfbfb;
-    font-size: 18px;
-    max-width: 650px;
-    margin: 90px 10px 10px 10px;
 }
 
-/* Para quitar los puntos a los items de listas */
-ul {
-    list-style: none;
-}
+h1{ font-size: 3.5em; margin: 20px;}
+h2{ font-size: 2.7em; margin: -10px 0 20px 0;}
+p{ font-size: 1.25em; margin: 15px;}
+ul{ list-style: none;}
+a{text-decoration: none;}
 
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
-*  el margin: auto; para tenerlo centrado fácilmente ;)
-*/
-main {
-    margin: auto;
-}
-
-/* Recomendaciones! 
-*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-*
-*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
-*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
-*
-*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
-*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
-*
-*  - Usen mucho las herramientas para desarrolladores del navegador para ir
-*    probando el CSS que escriben, resolver dudas y problemas.
-*
-*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
-*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
-*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
-*/
-
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0 10px 0px;    
-    position: fixed;
-    margin: -90px 0 0 0;
-    background-color: #fbfbfb;
-    min-width: 650px;
-    font-size: 18px;
-    box-shadow: 0 5px 5px #0f0f0f55;
-    z-index: 10;
-}
-.logo-img{
-    display: flex;
-    align-items: center;
-    width: 110px;
-    margin-top: -15px;
-}
-nav a{
+button{
+    font-size: 1.2em;
     font-weight: bold;
-    padding: 20px;
+    background-color:  #af599e;
+    color:  #fbfbfb;
+    border-radius: 15px;
+    border: 1px solid #747474;
+    box-shadow: 1px 1px 6px #74747480;
+    padding: 3px 15px;
     margin: 20px;
 }
-nav a:hover{
-    color: #383434;
+button:hover{
+    background-color: #834276;
+    padding: 5px 17px;
 }
 
-#imagen{
-    width: 400px;
-    clip-path: circle(35% at 51% 33%);
-    margin: 8% 20%;
-}
-
-h1{
-    font-size: 36px;
-    display: flex;
-    justify-content: center;
-}
-#saludo{
-    padding: 10px;    
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;    
-    margin-bottom: 30px; 
-    margin-top: -10%;
+.contenedor-menu{
+    max-width: 1600px;
+    margin: auto;
     
 }
-section button{
-    text-decoration: none;
-    background-color:  #af599e;
-    color:  #fbfbfb;
-    font-size: 20px;
-    border-radius: 15px;
-    border: solid #fbfbfb;   
+
+header{
+    background-color: #fbfbfb;
 }
-h2{
-    font-size: 28px;
+
+header .logo-img{
+    padding: 5px 30px;
+    width: 200px;
 }
-#hablemos{
-    background-color:  rgba(175, 89, 158, 0.3);
-    color: #0f0f0f;
-    padding: 10px;
-    min-height: 50vh;
+
+header .contenedor-menu{
+    position: fixed;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     align-items: center;
+    top: 0;
+    background-color: #fbfbfb;
+    width: 100%;
+}
+
+header nav{
     text-align: center;
+    
+}
+.menu-item{
+    padding: 5px 12px;       
+    margin-left: -40px;
+}
+
+.menu-item a{
+    color: #363636;    
+    text-decoration: none;    
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #af599e;
+}
+
+section[id]{
+    scroll-margin-top: 300px;
+}
+
+
+.imagen img{
+    display: flex;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0px -10px;
+    margin-top: 10px;
+}
+
+#saludo{
+    text-align: center;
+    padding: 90px 20px;
+    margin: 40px 10px;
+}
+
+#sobreElCurso{
+    text-align: center;
+    padding: 90px 12px;
+    background-color: #af599e;
+    margin-bottom: 30px;
+    padding: 90px 20px;
+}
+
+#contacto{
+    margin: 90px;
+    display: flex;
+    justify-content: space-evenly;
 }
 #contacto img{
-    margin: 50px 35px;
-    padding: 20px;
     width: 100px;
-    display: inline-block;
-    
+    margin: 15px;
 }
-footer{
-    background-color:  #af599e;
-    color:  #fbfbfb;
+
+footer p{
+    margin: 0;
+    color: #fbfbfb;
+    padding: 15px;
+}
+footer .contenedor-f{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    padding: 90px 0;
+    align-items: flex-end;
+    height: 90px;
+    background-color: #af599e;
+}
+
+.menu-item.active{
+    padding-right: 10px;
+    background: #af599e;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+}
+
+.menu-item.active:hover{
+    color: #fbfbfb;
+}
+
+@media (min-width: 775px){
+
+    header .contenedor-menu{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .menu-item{
+        display: inline;
+        margin: auto;
+        padding-right: 25px;
+    }
+
+    h1{font-size: 48px;}
+    h2{font-size: 32px;}
 }

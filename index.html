@@ -5,60 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anthony Mendez</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="img/LogoAnthonyMendez.png">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.google.com/specimen/Lato">
 </head>
 <body>
     <header>
-       <a href="#">
-            <img src="img/LogoAnthonyMendez.png" alt="Logo" class="logo-img">
-        </a>
-    
-    <!-- La estructura básica y la vinculación con CSS estan listas. A codear! 💪  -->
-    <!-- En este archivo escriban su HTML -->
-    
-    <nav>
-        <a href="#">INICIO</a>
-        <a href="#hablemos">CONTACTO</a>
-    </nav>
-</header>
-    
+        <div class="contenedor-menu">
+            <a href="#">
+                <img src="img/LogoAnthonyMendez.png" alt="Logo" class="logo-img">
+            </a>        
+        
+            <nav>
+                <ul id="menu">
+                    <li class="menu-item" class="active">
+                        <a href="#" class="menu-item">INICIO</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-item"href="#sobreElCurso">SOBRE EL CURSO</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-item" href="#contacto">CONTACTO</a>
+                    </li>
+                </ul>        
+             </nav>
+        </div>
+    </header> 
 
-    <div>
+    <div class="imagen">
         <img id="imagen" src="img/AnthonyMendez.png" alt="Anthony Mendez">
     </div>
-
-    
     
     <section id="saludo">
         <h1>Hola soy Anthony</h1>
-        
-        
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates exercitationem magni reprehenderit a quis tempora necessitatibus laborum quos, laboriosam dicta, maiores enim doloribus ut quasi cumque deserunt nisi recusandae qui.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa doloremque magni, rem dolorem recusandae provident, repellat quas exercitationem, magnam hic corrupti labore dolor animi perspiciatis et suscipit fugiat? Quo, quisquam.
-        </p>
+        <p>Siempre me presento como deportista, ya que me desempeño en el Triatlon y principalmente el ciclismo, aunque por los momentos no lo esté haciendo de forma competitiva. <br> Actualmente estoy trabajando en una empresa de logistica y distribución; por otra parte me encuentro en mi retorno académico, antes estaba cursando la carrera de Licenciatura en Informatica y tambien en Educación Física, pero por motivos ajenos y personales me toco pausar mis estudios, por eso ahora estoy retomando mediante cursos y coincidí con este que ha sido de gran ayuda para mi. <br> Estoy cada vez mas entuciasmado coon el mundo de la programación y en especial el Desarollo Web Front-End, ya que me idencitifo y siento que comprendo bastante bien los temas aunque deba repetir y repasar para lograr el objetivo. Pero como dicen, "La práctica hace al maestro".</p>
+        <button><a href="https://www.linkedin.com/in/anthony-méndez-6876b1257" target="_blank">Ir a CV</a></button>
+    </section>
 
-        <button><a href="https://www.linkedin.com/in/anthony-méndez-6876b1257" target="_blank">Descargar CV</a></button>
-
+    <section id="sobreElCurso">
+        <h2>Sobre el curso</h2>
+        <p>Ha sido una experiencia muy buena, me gustan los retos y este curso me los dió! Sabía muy poco sobre el Desarrollo Web y siento que aprendí bastante en estas semanas de clase, a comparación de como iniamos ha sido un gran avance. Agradecerle a Accenture, porfesores y moderadores de &lt;Código pa' lante&gt; que lo hicieron posible, han estado ahí para explicar, dar apoyo y conocimiento y agradezco mucho eso. <br> Ahora a seguir practicando, investigando y estudiando que el camino sigue!</p>
     </section>
 
     
+        <div id="contacto">        
+            <a href="https://www.github.com/anthonymendez2" target="_blank"><img src="img/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/anthony-méndez-6876b1257" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
+            <a href="mailto:soyanthonymendez@gmail.com?Subject=Contacto%20Anthony%20Mendez" target="_blank"><img src="img/mail.png" alt="e-mail"></a>
+        </div>  
 
-    <section id="hablemos">
-        <h2>Hablemos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates exercitationem magni reprehenderit a quis tempora necessitatibus laborum quos, laboriosam dicta, maiores enim doloribus ut quasi cumque deserunt nisi recusandae qui.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa doloremque magni, rem dolorem recusandae provident, repellat quas exercitationem, magnam hic corrupti labore dolor animi perspiciatis et suscipit fugiat? Quo, quisquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatem, ex quaerat, dolorum earum molestias rem libero illo laudantium dolor ea, consequatur facere? Pariatur blanditiis eaque voluptates, corporis quisquam nulla.</p>
-    </section>
+    <footer>
+        <div class="contenedor-f">
+            <p>Anthony Méndez &copy;</p>
+        </div>
+    </footer>
 
-    <div id="contacto">        
-        <a href="mailto:soyanthonymendez@gmail.com?Subject=Contacto%20Anthony%20Mendez" target="_blank"><img src="img/mail.png" alt="e-mail"></a>
-        <a href="https://www.github.com/anthonymendez2" target="_blank"><img src="img/github.png" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/anthony-méndez-6876b1257" target="_blank"><img src="img/linkedin.png" alt="Linkedin"></a>
-    </div>  
-
-    <footer>Anthony Méndez ©</footer>
+    <script src="main.js"></script>
 
 </body>
 </html>
